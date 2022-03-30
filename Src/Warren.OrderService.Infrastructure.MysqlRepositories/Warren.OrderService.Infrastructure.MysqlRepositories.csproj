@@ -1,0 +1,13 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp3.1</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\Warren.OrderService.Domain.IRepositories\Warren.OrderService.Domain.IRepositories.csproj" />
+    <ProjectReference Include="..\Warren.OrderService.Infrastructure.Mysql\Warren.OrderService.Infrastructure.Mysql.csproj" />
+    <ProjectReference Include="..\Warren.OrderService.Infrastructure\Warren.OrderService.Infrastructure.csproj" />
+  </ItemGroup>
+
+</Project>

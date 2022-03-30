@@ -1,0 +1,53 @@
+﻿{
+  "mysql": {
+    "databases": [
+      {
+        "name": "orderservice_index",
+        "tableShardingCount": 4,
+        "datasources": [
+          {
+            "shardingName": "0",
+            "connectionString": "Server=127.0.0.1;Port=3306;Database=orderservice_0; User=warren;Password=123456;pooling=True;minpoolsize=1;maxpoolsize=100;connectiontimeout=180;SslMode=None"
+          },
+          {
+            "shardingName": "1",
+            "connectionString": "Server=127.0.0.1;Port=3306;Database=orderservice_1; User=warren;Password=123456;pooling=True;minpoolsize=1;maxpoolsize=100;connectiontimeout=180;SslMode=None"
+          }
+        ]
+      },
+      {
+        "name": "orderservice_date",
+        "tableShardingCount": 1,
+        "datasources": [
+          {
+            "shardingName": "2022_0",
+            "connectionString": "Server=127.0.0.1;Port=3306;Database=orderservice_2022_0; User=warren;Password=123456;pooling=True;minpoolsize=1;maxpoolsize=100;connectiontimeout=180;SslMode=None"
+          },
+          {
+            "shardingName": "2022_1",
+            "connectionString": "Server=127.0.0.1;Port=3306;Database=orderservice_2022_1; User=warren;Password=123456;pooling=True;minpoolsize=1;maxpoolsize=100;connectiontimeout=180;SslMode=None"
+          },
+          {
+            "shardingName": "2022_2",
+            "connectionString": "Server=127.0.0.1;Port=3306;Database=orderservice_2022_2; User=warren;Password=123456;pooling=True;minpoolsize=1;maxpoolsize=100;connectiontimeout=180;SslMode=None"
+          },
+          {
+            "shardingName": "2022_3",
+            "connectionString": "Server=127.0.0.1;Port=3306;Database=orderservice_2022_3; User=warren;Password=123456;pooling=True;minpoolsize=1;maxpoolsize=100;connectiontimeout=180;SslMode=None"
+          }
+        ]
+
+      },
+      {
+        "name": "orderservice_statistics",
+        "tableShardingCount": 1,
+        "datasources": [
+          {
+            "shardingName": "",
+            "connectionString": "Server=127.0.0.1;Port=3306;Database=orderservice_statistics; User=warren;Password=123456;pooling=True;minpoolsize=1;maxpoolsize=100;connectiontimeout=180;SslMode=None"
+          }
+        ]
+      }
+    ]
+  }
+}
